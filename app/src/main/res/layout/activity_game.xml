@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_usagi2"
+    tools:context=".GameActivity"
+    tools:layout_editor_absoluteY="89dp">
+
+    <ImageButton
+        android:id="@+id/btnSlot1"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSlot2"
+        app:srcCompat="@drawable/question" />
+
+    <ImageButton
+        android:id="@+id/btnSlot2"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/btnSlot3"
+        app:layout_constraintStart_toEndOf="@+id/btnSlot1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <ImageButton
+        android:id="@+id/btnSlot3"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSlot2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSlot2"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:id="@+id/txvMainMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/strLetsGo"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txvMoneyGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSlot1" />
+
+    <TextView
+        android:id="@+id/txvMoneyGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/strMonet"
+        android:textSize="@dimen/lblMiddleSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvMainMsg" />
+
+    <TextView
+        android:id="@+id/txvBetValueGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/strZero"
+        android:textSize="@dimen/lblMiddleSize"
+        app:layout_constraintStart_toStartOf="@+id/txvBetGame"
+        app:layout_constraintTop_toBottomOf="@+id/txvBetGame" />
+
+    <TextView
+        android:id="@+id/txvBetGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/strBet"
+        android:textSize="@dimen/lblMiddleSize"
+        app:layout_constraintStart_toStartOf="@+id/txvMyValueGame"
+        app:layout_constraintTop_toBottomOf="@+id/txvMyValueGame" />
+
+    <TextView
+        android:id="@+id/txvMyValueGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="@string/strZero"
+        android:textSize="@dimen/lblMiddleSize"
+        app:layout_constraintStart_toStartOf="@+id/txvMoneyGame"
+        app:layout_constraintTop_toBottomOf="@+id/txvMoneyGame" />
+
+    <ImageView
+        android:id="@+id/img_mainImage"
+        android:layout_width="235dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSlot2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/face_genki" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:text="@string/strBack"
+        android:textSize="@dimen/lblMiddleSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
